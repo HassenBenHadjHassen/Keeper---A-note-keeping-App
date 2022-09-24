@@ -47,7 +47,10 @@ function CreateArea(props) {
         <button
           onClick={() => {
             props.onAdd(details);
-            setDetails("");
+            setDetails({
+              title: "",
+              content: ""
+            });
           }}
         >
           Add
